@@ -1,42 +1,36 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using CalculatorDll;
+﻿using CalculatorDll;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CalculatorTest
+namespace CalculatorTest.UnitTest
 {
-    /// <summary>
-    /// Summary description for UnitTest
-    /// </summary>
     [TestClass]
-    public class UnitTest
+    public class Class1Test
     {
         private Class1 class1;
-        public UnitTest()
+        public Class1Test()
         {
             //
             // TODO: Add constructor logic here
             //
         }
 
-        private TestContext testContextInstance;
+        //private TestContext testContextInstance;
 
-        /// <summary>
-        ///Gets or sets the test context which provides
-        ///information about and functionality for the current test run.
-        ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
+        ///// <summary>
+        /////Gets or sets the test context which provides
+        /////information about and functionality for the current test run.
+        /////</summary>
+        //public TestContext TestContext
+        //{
+        //    get
+        //    {
+        //        return testContextInstance;
+        //    }
+        //    set
+        //    {
+        //        testContextInstance = value;
+        //    }
+        //}
 
         #region Additional test attributes
         //
@@ -73,7 +67,7 @@ namespace CalculatorTest
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void SucceedingTest()
         {
             Assert.IsInstanceOfType(class1,typeof(Class1));
             class1.a = 0;
