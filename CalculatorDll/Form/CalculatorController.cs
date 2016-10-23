@@ -8,13 +8,21 @@ namespace CalculatorDll.Form
 {
     public class CalculatorController
     {
-        public CalculatorController()
+        public double Add(double first, double second)
         {
-            
+            return first+second;
         }
-        public T Add<T>(T first,T second)
+        public double Subtract(double first , double second)
         {
-            return first + second;
+            return first - second;
+        }
+        public double Multiply(double first , double second)
+        {
+            return first * second;
+        }
+        public double Divide(double first , double second)
+        {
+            return first / second;
         }
     }
 }
