@@ -20,7 +20,6 @@ namespace CalculatorDll.Form
          {
             case "Number":
 
-               break;
          }
       }
 

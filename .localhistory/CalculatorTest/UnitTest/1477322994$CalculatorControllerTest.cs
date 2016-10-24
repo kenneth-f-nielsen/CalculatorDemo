@@ -48,13 +48,12 @@ namespace CalculatorTest.UnitTest
       public void DivideWithZeroExpectException()
       {
          double d = calculator.Divide(1, 0);
-         Assert.AreEqual(double.PositiveInfinity, d);
+         Assert.AreEqual(double.NaN, d);
       }
-
       [TestMethod]
       public void AddOnePlusTwoExpectThree()
       {
-         double d = calculator.Add(1, 2);
+         double d = calculator.Divide(1, 2);
          Assert.AreEqual(3, d);
       }
    }

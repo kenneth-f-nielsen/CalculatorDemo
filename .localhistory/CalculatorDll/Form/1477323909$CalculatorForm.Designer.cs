@@ -165,7 +165,7 @@
          this.plusButton.TabIndex = 11;
          this.plusButton.Text = "+";
          this.plusButton.UseVisualStyleBackColor = true;
-         this.plusButton.Click += new System.EventHandler(this.operationButton_Click);
+         this.plusButton.Click += new System.EventHandler(this.divideButton_Click);
          // 
          // minusButton
          // 
@@ -175,7 +175,7 @@
          this.minusButton.TabIndex = 12;
          this.minusButton.Text = "-";
          this.minusButton.UseVisualStyleBackColor = true;
-         this.minusButton.Click += new System.EventHandler(this.operationButton_Click);
+         this.minusButton.Click += new System.EventHandler(this.divideButton_Click);
          // 
          // multiplyButton
          // 
@@ -185,7 +185,7 @@
          this.multiplyButton.TabIndex = 13;
          this.multiplyButton.Text = "*";
          this.multiplyButton.UseVisualStyleBackColor = true;
-         this.multiplyButton.Click += new System.EventHandler(this.operationButton_Click);
+         this.multiplyButton.Click += new System.EventHandler(this.divideButton_Click);
          // 
          // divideButton
          // 
@@ -195,7 +195,7 @@
          this.divideButton.TabIndex = 14;
          this.divideButton.Text = "/";
          this.divideButton.UseVisualStyleBackColor = true;
-         this.divideButton.Click += new System.EventHandler(this.operationButton_Click);
+         this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
          // 
          // CalculatorForm
          // 
