@@ -1,4 +1,5 @@
-﻿using CalculatorDll.Form;
+﻿using System;
+using CalculatorDll.Form;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CalculatorTest.UnitTest
@@ -48,9 +49,8 @@ namespace CalculatorTest.UnitTest
       public void DivideWithZeroExpectException()
       {
          double d = calculator.Divide(1, 0);
-         Assert.AreEqual(double.PositiveInfinity, d);
+         Assert.AreEqual(Double.PositiveInfinity, d);
       }
-
       [TestMethod]
       public void AddOnePlusTwoExpectThree()
       {

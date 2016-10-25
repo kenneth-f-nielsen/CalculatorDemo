@@ -1,17 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace CalculatorDll.Form
 {
-    public class CalculatorViewModel
-    {
-        public CalculatorViewModel()
-        {
-            
-        }
+   public class CalculatorViewModel : INotifyPropertyChanging
+   {
+      public event PropertyChangingEventHandler PropertyChanging;
 
-    }
+      private string number;
+      public string Number {
+         get { return number; }
+         set { number=value; }
+      }
+
+      public CalculatorViewModel()
+      {
+      }
+
+      
+   }
 }
