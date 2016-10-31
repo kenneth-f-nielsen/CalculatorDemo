@@ -103,17 +103,17 @@ namespace CommonPatterns
       }
    }
 
-   public class NotifyWithUIInfo<T>: ManualNotifyingProperty<T>
-   {
-      public MediaTypeNames.Image Image { get; set; }
-      public MediaTypeNames.Image DisabledImage { get; set; }
-      public string Text { get; set; }
-      public string ToolTip { get; set; }
-      public NotifyWithUIInfo(string propertyName)
-         : base(propertyName)
-      {
-      }
-   }
+   //public class NotifyWithUIInfo<T>: ManualNotifyingProperty<T>
+   //{
+   //   public MediaTypeNames.Image Image { get; set; }
+   //   public MediaTypeNames.Image DisabledImage { get; set; }
+   //   public string Text { get; set; }
+   //   public string ToolTip { get; set; }
+   //   public NotifyWithUIInfo(string propertyName)
+   //      : base(propertyName)
+   //   {
+   //   }
+   //}
 
    public class NotifyingMenu<T>: NotifyingProperty<T>
    {

@@ -43,12 +43,14 @@
          this.minusButton = new System.Windows.Forms.Button();
          this.multiplyButton = new System.Windows.Forms.Button();
          this.divideButton = new System.Windows.Forms.Button();
+         this.numericText = new System.Windows.Forms.NumericUpDown();
+         ((System.ComponentModel.ISupportInitialize)(this.numericText)).BeginInit();
          this.SuspendLayout();
          // 
          // closeButton
          // 
          this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-         this.closeButton.Location = new System.Drawing.Point(263, 278);
+         this.closeButton.Location = new System.Drawing.Point(136, 235);
          this.closeButton.Margin = new System.Windows.Forms.Padding(4);
          this.closeButton.Name = "closeButton";
          this.closeButton.Size = new System.Drawing.Size(100, 28);
@@ -197,12 +199,20 @@
          this.divideButton.UseVisualStyleBackColor = true;
          this.divideButton.Click += new System.EventHandler(this.operationButton_Click);
          // 
+         // numericText
+         // 
+         this.numericText.Location = new System.Drawing.Point(52, 44);
+         this.numericText.Name = "numericText";
+         this.numericText.Size = new System.Drawing.Size(157, 22);
+         this.numericText.TabIndex = 16;
+         // 
          // CalculatorForm
          // 
          this.AcceptButton = this.closeButton;
          this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(379, 321);
+         this.ClientSize = new System.Drawing.Size(252, 278);
+         this.Controls.Add(this.numericText);
          this.Controls.Add(this.divideButton);
          this.Controls.Add(this.multiplyButton);
          this.Controls.Add(this.minusButton);
@@ -224,6 +234,7 @@
          this.ShowInTaskbar = false;
          this.Text = "CalculatorForm";
          this.Click += new System.EventHandler(this.digitButton_Click);
+         ((System.ComponentModel.ISupportInitialize)(this.numericText)).EndInit();
          this.ResumeLayout(false);
 
         }
@@ -245,5 +256,6 @@
       private System.Windows.Forms.Button minusButton;
       private System.Windows.Forms.Button multiplyButton;
       private System.Windows.Forms.Button divideButton;
+      private System.Windows.Forms.NumericUpDown numericText;
    }
 }

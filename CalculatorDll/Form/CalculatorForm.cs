@@ -11,10 +11,10 @@ namespace CalculatorDll.Form
       {
          InitializeComponent();
          ViewModel = new CalculatorViewModel();
-         ViewModel.PropertyChanging += ViewModelOnPropertyChanging;
+         ViewModel.PropertyChanged += ViewModelOnPropertyChanged;
       }
 
-      private void ViewModelOnPropertyChanging(object sender, PropertyChangingEventArgs e)
+      private void ViewModelOnPropertyChanged( object sender, PropertyChangedEventArgs e )
       {
          switch( e.PropertyName )
          {
@@ -22,19 +22,22 @@ namespace CalculatorDll.Form
 
                break;
          }
+
       }
 
-      private void digitButton_Click(object sender, EventArgs e)
+
+      private void digitButton_Click( object sender, EventArgs e )
       {
-         ViewModel.Number.Value += ((Button)sender).Text;
+         int digit = int.Parse(((Button)sender).Text);
+         ViewModel.Number = ViewModel.Number * 10 + digit;
       }
 
-      private void operationButton_Click(object sender, EventArgs e)
+      private void operationButton_Click( object sender, EventArgs e )
       {
 
       }
 
-      private void closeButton_Click(object sender, EventArgs e)
+      private void closeButton_Click( object sender, EventArgs e )
       {
          Close();
       }
