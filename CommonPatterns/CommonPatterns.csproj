@@ -62,6 +62,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <BaseAddress>4521984</BaseAddress>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
