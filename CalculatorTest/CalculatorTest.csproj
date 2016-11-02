@@ -69,7 +69,7 @@
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
     <BaseAddress>1616904192</BaseAddress>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <RegisterForComInterop>true</RegisterForComInterop>
+    <RegisterForComInterop>false</RegisterForComInterop>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

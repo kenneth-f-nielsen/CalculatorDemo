@@ -68,7 +68,7 @@ namespace CommonPatternsTest
          NoOfDigits.PropertyChanged += OnPropertyChanged;
       }
 
-    
+
       [TestCleanup]
       public void TestCleanup()
       {
@@ -97,17 +97,18 @@ namespace CommonPatternsTest
       [TestMethod]
       public void NotifyingIntConstruction()
       {
-         Assert.IsInstanceOfType(NoOfDigits,typeof(NotifyingInt));
+         Assert.IsInstanceOfType(NoOfDigits, typeof(NotifyingInt));
       }
-      
+
       [TestMethod]
-      public void NotifyingIntVisible() {
+      public void NotifyingIntVisible()
+      {
          NoOfDigits.IsVisible = true;
          Assert.IsTrue(noOfDigitsCount.IsVisible);
          NoOfDigits.IsVisible = false;
          Assert.IsFalse(noOfDigitsCount.IsVisible);
       }
-      
+
       [TestMethod]
       public void NotifyingIntEnabled()
       {
@@ -120,8 +121,9 @@ namespace CommonPatternsTest
       [TestMethod]
       public void NotifyingIntValue()
       {
-         NoOfDigits.Value= 1;
-         Assert.AreEqual(1,noOfDigitsCount.Value);
+         NoOfDigits.Value = 2;
+         NoOfDigits.Value = 3;
+         Assert.AreEqual(2, noOfDigitsCount.Value);
       }
    }
 }
